@@ -1,0 +1,34 @@
+.container{
+  margin-top: 100px !important;
+}
+
+.main-card{
+  padding: 40px !important;
+}
+
+.custom-title{
+  text-align: center;
+}
+
+body{
+  background: url("../images/blurry-background-1.jpg");
+  .ui.label{
+    width: 70px;
+    font-size: 10px !important;
+  }
+  @media (min-width: 600px) {
+    .ui.label{
+      width: 200px;
+      font-size: inherit !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .ui.search.dropdown .menu {
+    width: 50%;
+  }
+  .ui.labeled.input:not([class*="corner labeled"]) .label:first-child+input{
+    width: 80%;
+  }
+}
